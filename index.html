@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard de Softwares</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; padding: 20px; }
-    h1 { text-align: center; margin-bottom: 20px; }
-    h2 { margin-top: 40px; text-align: center; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
-    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
-    .btn { display: inline-block; margin-top: 10px; padding: 10px 15px; background: #007BFF; color: white; text-decoration: none; border-radius: 8px; }
-    .btn:hover { background: #0056b3; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard de Softwares</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; padding: 20px; }
+  h1 { text-align: center; margin-bottom: 40px; color: #333; }
+  h2 { margin-top: 50px; margin-bottom: 20px; color: #444; border-left: 6px solid #007BFF; padding-left: 10px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
+  .card { display: flex; justify-content: space-between; align-items: center; background: white; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; height: 60px; min-width: 280px; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+  .btn { padding: 6px 12px; background: #007BFF; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; white-space: nowrap; }
+  .btn:hover { background: #0056b3; }
+  .software-name { font-weight: bold; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .category { margin-bottom: 50px; }
+</style>
 </head>
 <body>
-  <h1>Dashboard de Atualização de Softwares</h1>
+<h1>Dashboard de Softwares</h1>
 
-  <h2>Softwares (Online)</h2>
-  <div class="grid">
-    <div class="card"><h3>AnyDesk</h3><a class="btn" href="https://anydesk.com/pt/downloads/windows" target="_blank">Baixar</a></div>
-    <div class="card"><h3>DaVinci Resolve / Studio</h3><a class="btn" href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank">Baixar</a></div>
-    <div class="card"><h3>GeForce Experience</h3><a class="btn" href="https://www.nvidia.com/pt-br/geforce/geforce-experience/download/" target="_blank">Baixar</a></div>
-    <div class="card"><h3>HandBrake</h3><a class="btn" href="https://handbrake.fr/downloads.php" target="_blank">Baixar</a></div>
-    <div class="card"><h3>K-Lite Mega Codec Pack</h3><a class="btn" href="https://codecguide.com/download_kl.htm" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Maxon One</h3><a class="btn" href="https://www.maxon.net/en/downloads" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Monday</h3><a class="btn" href="https://monday.com/download" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Microsoft Teams</h3><a class="btn" href="https://www.microsoft.com/pt-br/microsoft-teams/download-app" target="_blank">Baixar</a></div>
-    <div class="card"><h3>OBS Studio</h3><a class="btn" href="https://obsproject.com/download" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Wacom Tablet Drivers</h3><a class="btn" href="https://www.wacom.com/pt-br/support/product-support/drivers" target="_blank">Baixar</a></div>
-    <div class="card"><h3>AE Scripts</h3><a class="btn" href="https://aescripts.com/downloadable/" target="_blank">Baixar</a></div>
-    <div class="card"><h3>FX Console - Video Copilot</h3><a class="btn" href="https://www.videocopilot.net/blog/2016/05/new-fx-console-plug-in-for-after-effects/" target="_blank">Baixar</a></div>
-    <div class="card"><h3>SABER - Video Copilot</h3><a class="btn" href="https://www.videocopilot.net/blog/2016/06/new-plug-in-saber-now-available/" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Mister Horse</h3><a class="btn" href="https://misterhorse.com/products/animation-composer" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Resolume</h3><a class="btn" href="https://resolume.com/download/" target="_blank">Baixar</a></div>
-    <div class="card"><h3>RSMB</h3><a class="btn" href="https://revisionfx.com/products/rsmb/" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Overlord</h3><a class="btn" href="https://battleaxe.co/overlord" target="_blank">Baixar</a></div>
-  </div>
+<!-- Categoria 1: Softwares Dia a Dia -->
+<div class="category">
+<h2>Softwares Dia a Dia</h2>
+<div class="grid">
+  <div class="card"><span class="software-name">CreativeCloud</span><a class="btn" href="https://www.adobe.com/download/creative-cloud?promoid=GVTYXZK9&mv=other" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Maxon One</span><a class="btn" href="https://www.maxon.net/en/downloads" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">GeForce Experience</span><a class="btn" href="https://us.download.nvidia.com/GFE/GFEClient/3.27.0.147/GeForce_Experience_v3.27.0.147.exe" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">HandBrake</span><a class="btn" href="https://github.com/HandBrake/HandBrake/releases/download/1.6.1/HandBrake-1.6.1-x86_64-Win_GUI.exe" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">K-Lite Mega Codec Pack</span><a class="btn" href="https://www.codecguide.com/download_k-lite_codec_pack_mega.htm" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">AnyDesk</span><a class="btn" href="https://download.anydesk.com/AnyDesk.exe" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Monday</span><a class="btn" href="https://monday.com/download" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Microsoft Teams</span><a class="btn" href="https://aka.ms/teamsdownload" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">OBS Studio</span><a class="btn" href="https://obsproject.com/pt-br/download" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Wacom Tablet Drivers</span><a class="btn" href="https://cdn.wacom.com/WacomTabletDriverInstaller.exe" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">EXR-IO</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EeqYyirJpJlGr5e-PRD3sC8BvyiCOzRk5gc7f4X38UXCpw?e=sWSr52" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">HapEncoder</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/Eb49XDuBkVVPkGfBM0EP6CEBOj1fUbr3kN77NmfKrxzfnA?e=638wxd" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Insta 360 Studio</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ERxLuOn8gtJEnvCBTFVBZkIB9Nmy1HRjtXrrvhhHW1HChA?e=4krAYc" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">PSD Codec</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ETBjeIonjYhKtsCuYSODIVwBe-JW2irprVVkLFwy2pBHBQ?e=AFSm57" target="_blank">Baixar</a></div>
+</div>
+</div>
 
-  <h2>Softwares Interos (SharePoint)</h2>
-  <div class="grid">
-    <div class="card"><h3>Element 3D - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ESdydWf3oSZJnr0A3H8bTmIBVUib1KJBPZw8DLbOwL9YPA?e=biEfVr" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Brack Light - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EXSm5zTvqtREnfXaYxmIqd0Bh37shma8LotB_I86tI7Pjw?e=ReHUyv" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Fresh Food - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ER_5CkcXIW5Mh03oSNhVj4wB0gIDal7Sh0jTu5_nUdtKSA?e=OL88KJ" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Jet Strike - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EWZo7LmWQKhErNo8SWMViU0BY7hAxoHw2k_U8FJ3m4pIWQ?e=vGbHF1" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Metropolitan - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EVfTAsvflCxFqE3pk1Isl30BOj9t_r4E4R-rZOeJWtwxXA?e=nJOElF" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Money Casino - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EYkvHy8U08ZNthqGUv-wOP0BPkCrjAdh00dJDjDLweZqmA?e=2gGSpM" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Motion Design 1 - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EZcPgtx8J6FPj6wPbiVVlEgBc51gGpoCX_73KqKmZQkypg?e=VWu7i4" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Motion Design 2 - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EYqOVn_r9BNNjuIgFYj42DABqPxxWKc_GoVtv2oTkDnNKA?e=84eagO" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Projectile Weapons - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EZj82EY98GBLtR0aL7tfxFwBzl0f4ksDU7zoEzqEzGiOOg?e=bfPDWn" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Pro Shaders 1 - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EcEEtKdC3s9NrslC_QxpJV0BwRdgj8WTO9naxqJcYad4Sw?e=BeZ8QV" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Pro Shaders 2 - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/Eb_g_h16Y6BBoyQx9SgG_UwBHOAbX3Lm0zmiyB75HqfJ1A?e=REUM71" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Sound Music - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EexRrt2Zi0lLjPkNGycWpJEBLhyV32DJKgTK90RBHGEK4Q?e=qkNJaT" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Sports - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EcDK0vBpxMtKjfqxmdq8tYIBWBepiBogsw3yhf9EZWpjyw?e=GCdqo" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Optical Flares - Video Copilot</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EVILbhHf-5tHlhZzGAWZyoQB6qjd0y4xQ1mNe9BCg6Foug?e=NudTrg" target="_blank">Baixar</a></div>
-    <div class="card"><h3>BRAW Studio</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/Ef6RUyiOlh5NgWQlHP_E4K4B1_LH51K3i8pxHr20nHApEA?e=Oc2vwe" target="_blank">Baixar</a></div>
-    <div class="card"><h3>EXR-IO</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EeqYyirJpJlGr5e-PRD3sC8BvyiCOzRk5gc7f4X38UXCpw?e=sWSr52" target="_blank">Baixar</a></div>
-    <div class="card"><h3>HapEncoder</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/Eb49XDuBkVVPkGfBM0EP6CEBOj1fUbr3kN77NmfKrxzfnA?e=638wxd" target="_blank">Baixar</a></div>
-    <div class="card"><h3>Insta 360 Studio</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ERxLuOn8gtJEnvCBTFVBZkIB9Nmy1HRjtXrrvhhHW1HChA?e=4krAYc" target="_blank">Baixar</a></div>
-    <div class="card"><h3>PSD Codec</h3><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ETBjeIonjYhKtsCuYSODIVwBe-JW2irprVVkLFwy2pBHBQ?e=AFSm57" target="_blank">Baixar</a></div>
-  </div>
+<!-- Categoria 2: Plug-ins -->
+<div class="category">
+<h2>Plug-ins</h2>
+<div class="grid">
+  <div class="card"><span class="software-name">RSMB</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EQlHicO91EtDskVNjUyDX8cB3uRhAt6vx0_l51L0o4l71A?e=eCd6vc" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Overlord</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EeFJ2tNCBuxEinwg6-f91KEBiUAEFrhKZG9YSIf7tC85Xw?e=wwxmb4" target="_blank">Baixar</a></div>
+</div>
+</div>
+
+<!-- Categoria 3: Plugins Video Copilot -->
+<div class="category">
+<h2>Plugins Video Copilot</h2>
+<div class="grid">
+  <div class="card"><span class="software-name">FX Console</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EWzBU-HiaipMmoCpyaNzR84Be4eDO5oHHVHMUTFBcwlWaQ?e=qegdHU" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">SABER</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EQ52e7h8mSBPmfnUbubZZsUBRqKsq0ArhfokOzGcOMG2Aw?e=oawO5v" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Element 3D</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ESdydWf3oSZJnr0A3H8bTmIBVUib1KJBPZw8DLbOwL9YPA?e=biEfVr" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Brack Light</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EXSm5zTvqtREnfXaYxmIqd0Bh37shma8LotB_I86tI7Pjw?e=ReHUyv" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Fresh Food</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/ER_5CkcXIW5Mh03oSNhVj4wB0gIDal7Sh0jTu5_nUdtKSA?e=OL88KJ" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Jet Strike</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EWZo7LmWQKhErNo8SWMViU0BY7hAxoHw2k_U8FJ3m4pIWQ?e=vGbHF1" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Metropolitan</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EVfTAsvflCxFqE3pk1Isl30BOj9t_r4E4R-rZOeJWtwxXA?e=nJOElF" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Money Casino</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EYkvHy8U08ZNthqGUv-wOP0BPkCrjAdh00dJDjDLweZqmA?e=2gGSpM" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Motion Design 1</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EZcPgtx8J6FPj6wPbiVVlEgBc51gGpoCX_73KqKmZQkypg?e=VWu7i4" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Motion Design 2</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EYqOVn_r9BNNjuIgFYj42DABqPxxWKc_GoVtv2oTkDnNKA?e=84eagO" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Projectile Weapons</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EZj82EY98GBLtR0aL7tfxFwBzl0f4ksDU7zoEzqEzGiOOg?e=bfPDWn" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Pro Shaders 1</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EcEEtKdC3s9NrslC_QxpJV0BwRdgj8WTO9naxqJcYad4Sw?e=BeZ8QV" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Pro Shaders 2</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/Eb_g_h16Y6BBoyQx9SgG_UwBHOAbX3Lm0zmiyB75HqfJ1A?e=REUM71" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Sound Music</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EexRrt2Zi0lLjPkNGycWpJEBLhyV32DJKgTK90RBHGEK4Q?e=qkNJaT" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Sports</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EcDK0vBpxMtKjfqxmdq8tYIBWBepiBogsw3yhf9EZWpjyw?e=GCdqoC" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">Optical Flares</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EVILbhHf-5tHlhZzGAWZyoQB6qjd0y4xQ1mNe9BCg6Foug?e=NudTrg" target="_blank">Baixar</a></div>
+</div>
+</div>
+
+<!-- Categoria 4: Softwares Correção de Cor -->
+<div class="category">
+<h2>Software Correção de Cor</h2>
+<div class="grid">
+  <div class="card"><span class="software-name">DaVinci Resolve / Studio</span><a class="btn" href="https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">BRAW Studio - Autokroma (AfterCodecs)</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/Ef6RUyiOlh5NgWQlHP_E4K4B1_LH51K3i8pxHr20nHApEA?e=Oc2vwe" target="_blank">Baixar</a></div>
+  <div class="card"><span class="software-name">BRAW Studio - Codec Visualização</span><a class="btn" href="https://hypermarcas-my.sharepoint.com/:u:/g/personal/israel_a_filho_hypera_com_br/EfmPOJLYn5NLiTjpWuJFEtsB21HbCGxOcELEpZ3BTteJTQ?e=5ZVOjC"_blank">Baixar</a></div>
+</div>
+</div>
+
 </body>
 </html>

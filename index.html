@@ -9,11 +9,11 @@
   h1 { text-align: center; margin-bottom: 40px; color: #333; }
   h2 { margin-top: 50px; margin-bottom: 20px; color: #444; border-left: 6px solid #007BFF; padding-left: 10px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
-  .card { display: flex; justify-content: space-between; align-items: center; background: white; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; height: 60px; min-width: 280px; }
+  .card { display: flex; justify-content: space-between; align-items: center; background: white; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; height: 60px; min-width: 280px; max-width: 100%; }
   .card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
   .btn { padding: 6px 12px; background: #007BFF; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; white-space: nowrap; }
   .btn:hover { background: #0056b3; }
-  .software-name { font-weight: bold; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .software-name { font-weight: bold; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; margin-right: 10px; }
   .category { margin-bottom: 50px; }
 </style>
 </head>
